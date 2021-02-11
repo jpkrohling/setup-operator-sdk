@@ -8,7 +8,7 @@ This ia a simple GitHub Action for setting up the `operator-sdk` binary for a Gi
 jobs:
   your-job:
     steps:
-    - uses: jpkrohling/setup-operator-sdk@v1.0.1
+    - uses: jpkrohling/setup-operator-sdk@v1.1.0
 ```
 
 or, overridding the version:
@@ -17,10 +17,12 @@ or, overridding the version:
 jobs:
   your-job:
     steps:
-    - uses: jpkrohling/setup-operator-sdk@v1.0.1
+    - uses: jpkrohling/setup-operator-sdk@v1.1.0
       with:
-        operator-sdk-version: v0.8.1
+        operator-sdk-version: v1.4.0
 ```
+
+The version 1.1.0 and newer will only work with Operator SDK v1.4.0 and higher.
 
 ## Contributing
 

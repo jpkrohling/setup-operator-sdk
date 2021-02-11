@@ -3,8 +3,8 @@ description: 'Setup operator-sdk'
 author: 'Juraci Paixão Kröhling'
 inputs: 
   operator-sdk-version:
-    description: 'The operator-sdk version to download. Example: v0.8.1'
-    default: 'v0.8.1'
+    description: 'The operator-sdk version to download. Example: v1.4.0'
+    default: 'v1.4.0'
 runs:
   using: 'node12'
   main: 'lib/main.js'
