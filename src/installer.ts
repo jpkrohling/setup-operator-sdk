@@ -41,12 +41,9 @@ async function acquireOperatorSDK(version: string): Promise<string> {
 
 function getFileName(version: string): string {
   switch (osPlat) {
-    case "linux":
-      return `operator-sdk-${version}-x86_64-linux-gnu`;
-    case "win32":
-      throw `Unsupported platform: ${osPlat}`;
     case "darwin":
-      return `operator-sdk-${version}-x86_64-apple-darwin`;
+    case "linux":
+        return `operator-sdk_${osPlat}_amd64`;
     default:
       throw `Unknown platform: ${osPlat}`;
   }

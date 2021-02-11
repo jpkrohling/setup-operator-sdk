@@ -26,8 +26,8 @@ describe('installer tests', () => {
   }, 100000);
 
   it('Acquires version of operator-sdk if no matching version is installed', async () => {
-    await installer.getOperatorSDK('v0.9.0');
-    const binaryDir = path.join(toolDir, 'operator-sdk', '0.9.0', os.arch());
+    await installer.getOperatorSDK('v1.4.0');
+    const binaryDir = path.join(toolDir, 'operator-sdk', '1.4.0', os.arch());
 
     expect(fs.existsSync(`${binaryDir}.complete`)).toBe(true);
     expect(fs.existsSync(path.join(binaryDir, 'operator-sdk'))).toBe(true);
